@@ -1,0 +1,54 @@
+{
+  "name": "robot-queue-pull",
+  "description": "Pull next job from tfk saksbehandling queue",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "tfk",
+    "Telemark fylkeskommune",
+    "Saksbehandling",
+    "Robot",
+    "Queue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/robot-queue-pull.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/robot-queue-pull/issues"
+  },
+  "homepage": "http://github.com/telemark/robot-queue-pull",
+  "devDependencies": {
+    "ava": "0.19.1",
+    "coveralls": "2.13.1",
+    "nsp": "2.6.3",
+    "nyc": "10.3.2",
+    "standard": "10.0.2"
+  },
+  "dependencies": {
+    "axios": "0.16.1",
+    "is-directory-promise": "1.0.2",
+    "jsonwebtoken": "7.4.1",
+    "uuid": "3.0.1",
+    "winston": "2.3.1",
+    "winston-papertrail": "1.0.5"
+  }
+}

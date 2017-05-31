@@ -1,6 +1,7 @@
 'use strict'
 
 const getNextJobFromQueue = require('./lib/steps/get-next-job-from-queue')
+const setupData = require('./lib/steps/setup-data')
 const saveToJobs = require('./lib/steps/save-to-jobs')
 const saveToCopies = require('./lib/steps/save-to-copies')
 const removeFromQueue = require('./lib/steps/remove-from-queue')
@@ -9,6 +10,7 @@ const logger = require('./lib/logger')
 logger('info', ['index', 'start'])
 
 getNextJobFromQueue()
+  .then(setupData)
   .then(saveToJobs)
   .then(saveToCopies)
   .then(removeFromQueue)

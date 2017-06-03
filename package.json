@@ -1,7 +1,7 @@
 {
   "name": "robot-queue-pull",
   "description": "Pull next job from tfk saksbehandling queue",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "author": {

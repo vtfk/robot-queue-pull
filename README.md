@@ -22,6 +22,10 @@ PAPERTRAIL_HOST=logs.papertrailapp.com
 PAPERTRAIL_PORT=12345
 ```
 
+## Callback
+
+If you don't need a callback service just remove CALLBACK_URL from config.
+
 ## Build
 
 ```bash

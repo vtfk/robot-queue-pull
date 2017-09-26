@@ -11,8 +11,9 @@ Pulls job from queue
 Update docker.env
 
 ```bash
+NODE_ENV=production
 JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
-JOB_DIRECTORY_PATH=test/directories/jobs
+JOBS_DIRECTORY_PATH=test/directories/jobs
 COPIES_DIRECTORY_PATH=test/directories/copies
 CALLBACK_URL=https://example.com/api/callback
 QUEUE_NEXT_URL=https://example.com/api/queue/next

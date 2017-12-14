@@ -48,7 +48,7 @@
     "is-directory-promise": "1.0.2",
     "jsonwebtoken": "8.1.0",
     "uuid": "3.1.0",
-    "winston": "3.0.0-rc0",
+    "winston": "2.4.0",
     "winston-papertrail": "1.0.5"
   }
 }

@@ -44,7 +44,7 @@
     "standard": "11.0.0"
   },
   "dependencies": {
-    "axios": "0.17.1",
+    "axios": "0.18.0",
     "is-directory-promise": "1.0.2",
     "jsonwebtoken": "8.1.1",
     "uuid": "3.2.1",

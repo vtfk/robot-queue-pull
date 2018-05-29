@@ -1,5 +1,3 @@
-'use strict'
-
 const getNextJobFromQueue = require('./lib/steps/get-next-job-from-queue')
 const setupData = require('./lib/steps/setup-data')
 const saveToJobs = require('./lib/steps/save-to-jobs')
@@ -14,11 +12,11 @@ getNextJobFromQueue()
   .then(saveToJobs)
   .then(saveToCopies)
   .then(removeFromQueue)
-  .then((data) => {
+  .then(data => {
     logger('info', ['index', data._id, 'finished'])
     process.exit(0)
   })
-  .catch((error) => {
-    logger('error', ['index', 'error', JSON.stringify(error)])
+  .catch(error => {
+    logger('error', ['index', 'error', JSON.stringify(error && error.message ? error.message : error)])
     process.exit(1)
   })

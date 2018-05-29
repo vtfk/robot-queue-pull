@@ -1,5 +1,5 @@
-# Setting the base to nodejs 8.6.0
-FROM node:8.6.0-alpine
+# Setting the base to nodejs 10
+FROM mhart/alpine-node:10
 
 # Maintainer
 MAINTAINER Geir Gåsodden

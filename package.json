@@ -19,7 +19,8 @@
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
-    "start": "node index.js"
+    "start": "node index.js",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "tfk",
@@ -30,12 +31,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/robot-queue-pull.git"
+    "url": "git+https://github.com/telemark/robot-queue-pull.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/robot-queue-pull/issues"
+    "url": "https://github.com/telemark/robot-queue-pull/issues"
   },
-  "homepage": "http://github.com/telemark/robot-queue-pull",
+  "homepage": "https://github.com/telemark/robot-queue-pull#readme",
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.1",
@@ -51,3 +52,4 @@
     "winston-papertrail": "1.0.5"
   }
 }
+

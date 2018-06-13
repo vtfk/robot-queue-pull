@@ -3,6 +3,8 @@ module.exports = {
   JOBS_DIRECTORY_PATH: process.env.JOBS_DIRECTORY_PATH || 'test/directories/jobs',
   COPIES_DIRECTORY_PATH: process.env.COPIES_DIRECTORY_PATH || 'test/directories/copies',
   CALLBACK_URL: process.env.CALLBACK_URL || false,
+  AUTH_USERNAME: process.env.AUTH_USERNAME || false,
+  AUTH_PASSWORD: process.env.AUTH_PASSWORD || false,
   QUEUE_NEXT_URL: process.env.QUEUE_NEXT_URL || 'https://example.com/api/queue/next',
   QUEUE_DELETE_URL: process.env.QUEUE_DELETE_URL || 'https://example.com/api/queue',
   PAPERTRAIL_HOSTNAME: process.env.PAPERTRAIL_HOSTNAME || 'robot-queue-pull',

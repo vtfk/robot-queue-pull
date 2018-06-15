@@ -15,7 +15,7 @@ getNextJobFromQueue()
   .then(saveToCopies)
   .then(removeFromQueue)
   .then(data => {
-    logger('info', ['index', data._id, 'finished'])
+    logger('info', ['index', 'jobs', data.length, 'finished'])
     process.exit(0)
   })
   .catch(error => {

@@ -3,7 +3,7 @@
 
 # robot-queue-pull
 
-Pulls job from queue
+Retrieves all jobs from queue
 
 ## Setup
 

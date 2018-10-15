@@ -1,18 +1,10 @@
-FROM node:10.12.0-alpine@sha256:1e3e3e7ffc965511c5d4f4e90ec5d9cabee95b5b1fbcd49eb6a2289f425cf183
+FROM mhart/alpine-node:10 as base
+WORKDIR /usr/src
+COPY package.json package-lock.json /usr/src/
+RUN npm i --production
+COPY . .
 
-#### Begin setup ####
-
-# Installs git
-RUN apk add --update --no-cache git
-
-# Bundle app source
-COPY . /src
-
-# Change working directory
-WORKDIR "/src"
-
-# Install dependencies
-RUN npm install --production
-
-# Startup
-ENTRYPOINT npm start
+FROM mhart/alpine-node:base-10
+WORKDIR /usr/src
+COPY --from=base /usr/src .
+CMD ["node", "index.js"]

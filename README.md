@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/telemark/robot-queue-pull.svg?branch=master)](https://travis-ci.com/telemark/robot-queue-pull)
+[![Build Status](https://travis-ci.org/telemark/robot-queue-pull.svg?branch=master)](https://travis-ci.org/telemark/robot-queue-pull)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # robot-queue-pull
@@ -49,5 +49,3 @@ This will start a container. Do the job. Stop the container and remove it.
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of robot-queue-pull](https://robots.kebabstudios.party/robot-queue-pull.png "Robohash image of robot-queue-pull")

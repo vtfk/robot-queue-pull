@@ -63,3 +63,6 @@ typings/
 
 # Env
 .env
+
+# Ignore test json files
+test/directories/*/*.json

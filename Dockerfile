@@ -1,12 +1,18 @@
-FROM mhart/alpine-node:10 as base
-RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
-RUN git clone https://github.com/telemark/robot-queue-pull.git src
-WORKDIR /src
-RUN npm i --production
-COPY . .
+FROM mhart/alpine-node:12.18
 
-FROM mhart/alpine-node:base-10
+#### Begin setup ####
+
+# Installs git
+RUN apk add --update --no-cache git
+
+# Bundle app source
+COPY . /src
+
+# Change working directory
 WORKDIR /src
-COPY --from=base /src .
-CMD ["node", "index.js"]
+
+# Install dependencies
+RUN npm install --production
+
+# Startup
+ENTRYPOINT npm start

@@ -3,7 +3,7 @@ const setupData = require('./lib/steps/setup-data')
 const generateJobs = require('./lib/steps/generate-jobs')
 const saveToJobs = require('./lib/steps/save-to-jobs')
 const saveToCopies = require('./lib/steps/save-to-copies')
-const logger = require('./lib/logger')
+const { logger } = require('@vtfk/logger')
 
 logger('info', ['index', 'start'])
 

@@ -8,8 +8,5 @@ module.exports = {
   AUTH_USERNAME: process.env.AUTH_USERNAME || false,
   AUTH_PASSWORD: process.env.AUTH_PASSWORD || false,
   QUEUE_URL: process.env.QUEUE_URL || 'https://example.com/api/queue/next',
-  CALLBACK_URL: process.env.CALLBACK_URL || false,
-  PAPERTRAIL_HOSTNAME: process.env.PAPERTRAIL_HOSTNAME || 'robot-queue-pull',
-  PAPERTRAIL_HOST: process.env.PAPERTRAIL_HOST || 'logs.papertrailapp.com',
-  PAPERTRAIL_PORT: process.env.PAPERTRAIL_PORT || 12345
+  CALLBACK_URL: process.env.CALLBACK_URL || false
 }

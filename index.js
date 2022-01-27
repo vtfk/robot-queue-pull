@@ -14,11 +14,11 @@ getNextJobFromQueue()
   .then(generateYffBekreftelse)
   .then(saveToJobs)
   .then(saveToCopies)
-  .then(data => {
-    logger('info', ['index', 'jobs', data.length, 'finished'])
+  .then(async data => {
+    await logger('info', ['index', 'jobs', data.length, 'finished'])
     process.exit(0)
   })
-  .catch(error => {
-    logger('error', ['index', 'error', JSON.stringify(error && error.message ? error.message : error)])
+  .catch(async error => {
+    await logger('error', ['index', 'error', JSON.stringify(error && error.message ? error.message : error)])
     process.exit(1)
   })

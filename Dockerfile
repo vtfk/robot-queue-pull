@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:16.4
+FROM node:16.14.0-alpine
 
 #### Begin setup ####
 

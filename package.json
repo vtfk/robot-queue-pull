@@ -31,12 +31,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telemark/robot-queue-pull.git"
+    "url": "git+https://github.com/vtfk/robot-queue-pull.git"
   },
   "bugs": {
-    "url": "https://github.com/telemark/robot-queue-pull/issues"
+    "url": "https://github.com/vtfk/robot-queue-pull/issues"
   },
-  "homepage": "https://github.com/telemark/robot-queue-pull#readme",
+  "homepage": "https://github.com/vtfk/robot-queue-pull#readme",
   "devDependencies": {
     "ava": "4.0.1",
     "coveralls": "3.1.1",
